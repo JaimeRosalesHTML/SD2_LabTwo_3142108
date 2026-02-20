@@ -35,4 +35,13 @@ public class ConversionsTest {
         assertEquals(0, c.stringToInteger("abc"));
         assertEquals(0, c.stringToInteger(null));
     }
+    
+    @Test
+    public void testIntegerToString() {
+        Conversions c = new Conversions();
+
+        assertEquals("0", c.integerToString(0));
+        assertEquals("99", c.integerToString(99));
+        assertEquals("-7", c.integerToString(-7));
+    }
 }
