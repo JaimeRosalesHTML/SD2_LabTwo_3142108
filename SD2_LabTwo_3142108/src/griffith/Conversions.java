@@ -11,9 +11,17 @@ public class Conversions {
 	    return dollar / RATE;
 	}
 
-    public int stringToInteger(String val) {
-        return 0;
-    }
+	public int stringToInteger(String val) {
+	    if (val == null) {
+	        return 0;
+	    }
+
+	    try {
+	        return Integer.parseInt(val);
+	    } catch (NumberFormatException e) {
+	        return 0;
+	    }
+	}
 
     public String integerToString(int val) {
         return null;
