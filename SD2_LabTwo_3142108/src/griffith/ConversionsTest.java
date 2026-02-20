@@ -25,4 +25,14 @@ public class ConversionsTest {
         assertEquals(0.0, c.dollarToEuro(0.0), 0.0001);
         assertEquals(-50.0, c.dollarToEuro(-55.0), 0.0001);
     }
+    
+    @Test
+    public void testStringToInteger() {
+        Conversions c = new Conversions();
+
+        assertEquals(123, c.stringToInteger("123"));
+        assertEquals(-50, c.stringToInteger("-50"));
+        assertEquals(0, c.stringToInteger("abc"));
+        assertEquals(0, c.stringToInteger(null));
+    }
 }
