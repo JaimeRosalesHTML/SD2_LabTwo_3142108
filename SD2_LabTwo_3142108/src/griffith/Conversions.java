@@ -2,8 +2,9 @@ package griffith;
 
 public class Conversions {
 	public double euroToDollar(double euro) {
-        return 0;
-    }
+	    final double RATE = 1.10;
+	    return euro * RATE;
+	}
 
     public double dollarToEuro(double dollar) {
         return 0;
