@@ -27,7 +27,25 @@ public class Conversions {
 	    return String.valueOf(val);
 	}
 
-    public String switchCase(String input) {
-        return null;
-    }
+	public String switchCase(String input) {
+	    if (input == null) {
+	        return null;
+	    }
+
+	    String result = "";
+
+	    for (int i = 0; i < input.length(); i++) {
+	        char ch = input.charAt(i);
+
+	        if (Character.isUpperCase(ch)) {
+	            result += Character.toLowerCase(ch);
+	        } else if (Character.isLowerCase(ch)) {
+	            result += Character.toUpperCase(ch);
+	        } else {
+	            result += ch;
+	        }
+	    }
+
+	    return result;
+	}
 }
