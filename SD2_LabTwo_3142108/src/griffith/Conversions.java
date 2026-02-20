@@ -6,9 +6,10 @@ public class Conversions {
 	    return euro * RATE;
 	}
 
-    public double dollarToEuro(double dollar) {
-        return 0;
-    }
+	public double dollarToEuro(double dollar) {
+	    final double RATE = 1.10;
+	    return dollar / RATE;
+	}
 
     public int stringToInteger(String val) {
         return 0;
