@@ -16,4 +16,13 @@ public class ConversionsTest {
         assertEquals(0.0, c.euroToDollar(0.0), 0.0001);
         assertEquals(-55.0, c.euroToDollar(-50.0), 0.0001);
     }
+    
+    @Test
+    public void testDollarToEuro() {
+        Conversions c = new Conversions();
+
+        assertEquals(100.0, c.dollarToEuro(110.0), 0.0001);
+        assertEquals(0.0, c.dollarToEuro(0.0), 0.0001);
+        assertEquals(-50.0, c.dollarToEuro(-55.0), 0.0001);
+    }
 }
